@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cancel Registration</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+    <div id="divmain">
+        <h1>Cancel Registration</h1><br>
+        <h2>Input your email below and we will delete<br> all of the registrations that correspond to <br>your email.</h2><br>
+        <div id="divEnter">
+        <form action="http://localhost:<%- Number %>/registrations/processCancel" method="post">
+            <fieldset>
+                <label><strong>Email Address: </strong><input type="email" name="email" required></label><br><br>
+            </fieldset>
+
+            <br>
+            <input type="reset" />
+            <input type="submit" value="Submit Request"/>
+        </form>
+        </div><br>
+        <div id="div1">
+        <div id="div2">
+        <div id="div3">
+            <a href="http://localhost:<%- Number %>/">HOME</a>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>

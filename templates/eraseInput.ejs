@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<script>
+    window.onsubmit = () => {
+        return window.confirm("Are you sure you want to cancel the convention? This will trigger the ship's self-destruct sequence."); 
+    }
+</script>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cancel All Registrations</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+    <div id="divmain">
+        <h1>Cancel the Convention (Cancel Every Registration)</h1>
+        <form action="http://localhost:<%- Number %>/eventData/processErase" method="post">
+            <input type="submit" value="Cancel the Convention"/>
+        </form>
+        <br>
+        <div id="div1">
+        <div id="div2">
+        <div id="div3">
+            <a href="http://localhost:<%- Number %>/">HOME</a>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>

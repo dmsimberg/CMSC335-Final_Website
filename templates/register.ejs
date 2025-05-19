@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    window.onsubmit = () => {
+        return window.confirm("Are you sure you want to complete your registration?\nYou will not be able to change your information once submitted."); 
+    }
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Trek Registration</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+    <div id="divmain">
+    <h1 id="headCategory"><span>Ticket Registration</span></h1>
+
+    <div id="divEnter">
+        <form action="/registrations/confirmation" method="post">
+            <u><strong>Name:</strong></u> <input type="text" name="name" required><br><br>
+            
+            <u><strong>Email Address:</strong></u> <input type="email" name="email" required><br><br>
+
+            <fieldset>
+                <legend><strong>Ticket Plan</strong></legend>
+                <label><input type="radio" name="plan" value="Klingon">Klingon ($20)</label><br>
+                <label><input type="radio" name="plan" value="Romulan">Romulan ($30)</label><br>
+                <label><input type="radio" name="plan" value="Vulcan">Vulcan ($50)</label>
+            </fieldset><br>
+
+            <u><strong>Credit Card #</strong></u>
+            <input type="text" class="redBorder" name="cc1" size="4" maxlength="4" required> &nbsp;-&nbsp; 
+            <input type="text" class="redBorder" name="cc2" size="4" maxlength="4" required> &nbsp;-&nbsp;
+            <input type="text" class="redBorder" name="cc3" size="4" maxlength="4" required> &nbsp;-&nbsp; 
+            <input type="text" class="redBorder" name="cc4" size="4" maxlength="4" required>
+
+            <br>
+            <br>
+
+            <input type="reset" />
+		    <input type="submit" value="Purchase Ticket"/>
+	    </form>
+    </div><br>
+
+    <div id="div1">
+    <div id="div2">
+    <div id="div3">
+        <a href="http://localhost:<%- Number %>/">HOME</a>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>

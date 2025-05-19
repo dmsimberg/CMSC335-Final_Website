@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    display: table;
+    margin: auto;
+    font-family: Merryweather;
+    background-image: url(templates/sensory/STARTREK.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    color: Black;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 3rem;
+    background-color: rgb(211,211,211, 0.8);
+    border: solid;
+}
+
+h2 {
+    background-color: rgb(211,211,211, 0.8);
+    font-family: Merryweather;
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    border-style: solid;
+}
+
+#divmain {
+    background-size: 102%;
+}
+
+#description {
+    background-color: rgb(211,211,211, 0.8);
+    font-family: Merryweather;
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    border-style: solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: black;
+}
+
+#regis {
+    background-color: rgb(211,211,211, 0.8);
+    font-family: Merryweather;
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    border-style: solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: black;
+}
+
+#event {
+    background-color: rgb(211,211,211, 0.8);
+    font-family: Merryweather;
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    border-style: solid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: black;
+}
+
+a {
+    color: brown;
+}
+
+a:visited {
+    color: beige;
+}
+
+a:hover {
+    font-size: medium;
+}
+
+#div1 {
+    border: solid;
+    border-width: 0.45rem;
+    background-color: rgb(211,211,211, 0.8);
+    margin-top: 2rem;
+}
+
+#div2 {
+    border-width: 0.45rem;
+}
+
+#div3 {
+    border-width: 0.45rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+#divEnter {
+    background-color: rgb(211,211,211, 0.8);
+    font-family: Merryweather;
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    border-style: solid;
+}
+
+img {
+    border: solid;
+}
+
+table {
+    background-color: rgb(211,211,211, 0.8);
+    font-family: Merryweather;
+    display: table;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    border-style: solid;
+}

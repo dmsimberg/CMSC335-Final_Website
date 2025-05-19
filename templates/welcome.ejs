@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMD Star Trek</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+    <audio id="player" name="player" src="">
+    </audio>
+
+    <div id="divmain">
+
+        <h1 id="headCategory"><span>Pe'el!! (Welcome!!)</span></h1>
+
+        <div id="description">
+            <p>Hello. This is Captain Simberg of the Starship Testudo, and today we invite you our one and only Star Trek Convention at the Unveristy of Maryland,
+                College Park!! Join us as we meet with the actors, writers, and behind-the-scenes crews of our favorite series, from <em>The Next Generation</em>
+                to <em>Discovery</em>!! Space is limited, so register now to get your ticket to go to where no terp has gone before!! (The Bredan Iribe Building,
+                to be precise, from 1:30-6:30 PM January 26th 2026.) Hope to see you there! And until then:
+            </p>
+
+            Live Long and Prosper!!<br><br>
+
+            <p><%- translate %></p>
+
+            Current Local Weather at IRB (just to keep an eye on):
+            <p><%- forecast %></p>
+        </div><br>
+
+        <div id="regis">
+            <h2>Register Online</h2>
+
+            <ul>
+                <li>To register and buy a ticket click <a href="/registrations/register">HERE</a></li>
+                <li>To view your ticket/registration click <a href="/registrations/viewRegistration">HERE</a></li>
+                <li>To cancel your ticket/registration click <a href="/registrations/cancel">HERE</a><br></li>
+            </ul>
+        </div><br>
+
+        <div id="event">
+            <h2>Organizer Information (For Staff Use Only)</h2>
+
+            <ul>
+                <li>To view data on current ticket-holders click <a href="/eventData/viewData">HERE</a></li>
+                <li>To view the current total number of arrivals click <a href="/eventData/viewTotals">HERE</a></li>
+                <li>To cancel all registrations click <a href="/eventData/erase">HERE</a></li>
+                <li>To play some fun (copyright-free) background music: <button onclick="playSound()">Play Sound</button><button onclick="stop()">Stop</button><br></li>
+            </ul>
+        </div><br>
+
+        <div id="div1">
+        <div id="div2">
+        <div id="div3">
+            <footer>
+                <div>
+                    <a href="https://umd.edu">UMD Web Page</a><br>
+                </div>
+            </footer>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        "use strict";
+
+        const player = document.querySelector("#player");
+
+        player.src = "sensory/SoundHelix-Song-1.mp3";
+
+        function playSound() { 
+            player.play();
+        }
+
+        function stop() {
+            player.pause();
+            player.currentTime = 0;
+        }
+    </script>
+</body>
