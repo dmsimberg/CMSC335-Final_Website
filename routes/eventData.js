@@ -11,7 +11,7 @@ require("dotenv").config({
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const publicPath = path.resolve(__dirname, "../templates/sensory");
 router.use(express.static(publicPath));
-const portNumber = 9876;
+const portNumber = process.env.PORT || 9876;
 
 router.get("/viewData", (request, response) => {
     let table = "";

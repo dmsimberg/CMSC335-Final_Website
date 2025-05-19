@@ -11,7 +11,7 @@ app.use(express.static(__dirname));
 
 app.use(bodyParser.urlencoded({extended:false}));
 
-const portNumber = 9876;
+const portNumber = process.env.PORT || 9876;
 
 process.stdin.setEncoding("utf8");
 

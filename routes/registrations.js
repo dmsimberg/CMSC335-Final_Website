@@ -9,7 +9,7 @@ require("dotenv").config({
 */
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const portNumber = 9876;
+const portNumber = process.env.PORT || 9876;
 
 router.get("/register", (request, response) => {
     const variables = {
