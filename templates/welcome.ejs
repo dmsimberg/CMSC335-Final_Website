@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <audio id="player" name="player" src="">
+    </audio>
 
     <div id="divmain">
 
@@ -46,6 +48,7 @@
                 <li>To view data on current ticket-holders click <a href="/eventData/viewData">HERE</a></li>
                 <li>To view the current total number of arrivals click <a href="/eventData/viewTotals">HERE</a></li>
                 <li>To cancel all registrations click <a href="/eventData/erase">HERE</a></li>
+                <li>To play some fun (copyright-free) background music: <button onclick="playSound()">Play Sound</button><button onclick="stop()">Stop</button><br></li>
             </ul>
         </div><br>
 
@@ -61,4 +64,21 @@
         </div>
         </div>
     </div>
+
+    <script>
+        "use strict";
+
+        const player = document.querySelector("#player");
+
+        player.src = "sensory/SoundHelix-Song-1.mp3";
+
+        function playSound() { 
+            player.play();
+        }
+
+        function stop() {
+            player.pause();
+            player.currentTime = 0;
+        }
+    </script>
 </body>
