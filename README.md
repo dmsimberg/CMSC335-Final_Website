@@ -7,4 +7,4 @@ App Description:     Allow users to register for a convention based aound the St
 YouTube Video Link: https://youtu.be/U0ks_qB6feI
 APIs: Weather API (https://api.weather.gov), Klingon Translation (https://api.funtranslations.com/translate/klingon.json)
 Contact Email:  dsimberg@terpmail.umd.edu
-Deployed App Link: https://notreal.what.terpNel/myApp
+Deployed App Link: https://cmsc335-final-gl8o.onrender.com
