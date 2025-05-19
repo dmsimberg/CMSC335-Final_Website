@@ -9,8 +9,6 @@
 </head>
 
 <body>
-    <audio id="player" name="player" src="">
-    </audio>
 
     <div id="divmain">
 
@@ -63,21 +61,4 @@
         </div>
         </div>
     </div>
-
-    <script>
-        "use strict";
-
-        const player = document.querySelector("#player");
-
-        player.src = "sensory/SoundHelix-Song-1.mp3";
-
-        function playSound() { 
-            player.play();
-        }
-
-        function stop() {
-            player.pause();
-            player.currentTime = 0;
-        }
-    </script>
 </body>
