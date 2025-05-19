@@ -1,9 +1,13 @@
 const path = require("path");
 const express = require('express');
 const router = express.Router();
+
+/*
 require("dotenv").config({
     path: path.resolve(__dirname, ".env"),
 });
+*/
+
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const portNumber = 9876;
 
